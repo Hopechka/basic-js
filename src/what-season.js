@@ -15,7 +15,7 @@ function getSeason(date) {
   if (date === undefined) {
     return 'Unable to determine the time of year!';
   }
-  if (isNaN(Date.parse(date)) || Object.getOwnPropertyNames(date).length) {
+  if (isNaN(Date.parse(date)) || Object.getOwnPropertyNames(date).length > 0) {
     throw new Error('Invalid date!');
   }
   let month = date.getMonth();
