@@ -39,3 +39,5 @@ function dateSample(str) {
 module.exports = {
   dateSample,
 };
+
+//проверяю коммиты
